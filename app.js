@@ -8,9 +8,10 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 
 app.post('/upload', upload.single('file'), function(req, res, next) {
+    
     console.log(req.file);
-    return res.json(req.file.size);
-})
+    return res.json(req.file);
+});
 
 
 app.listen(process.env.PORT);

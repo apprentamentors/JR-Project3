@@ -8,11 +8,11 @@
 </head>
 <body>
     <p>Submit a file to view its file size</p>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="file">
         <input type="submit">
     </form>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="client/index.js"></script>
 </body>
 </html>
